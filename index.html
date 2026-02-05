@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Belvi Coin (BLV)</title>
+
+<style>
+body{
+  background:#0b0f17;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  padding:30px;
+}
+button{
+  padding:8px 14px;
+  margin:5px;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+}
+.card{
+  background:#141a26;
+  padding:20px;
+  border-radius:12px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Language Buttons -->
+<button onclick="setLang('es')">ES</button>
+<button onclick="setLang('en')">EN</button>
+
+<h1 data-es="Belvi Coin (BLV)"
+    data-en="Belvi Coin (BLV)">
+Belvi Coin (BLV)
+</h1>
+
+<p data-es="Token comunitario en Ethereum"
+   data-en="Community token on Ethereum">
+Token comunitario en Ethereum
+</p>
+
+<div class="card">
+<h2 data-es="Estado"
+    data-en="Status">Estado</h2>
+
+<p data-es="Pruebas en Sepolia completadas"
+   data-en="Sepolia tests completed">
+Pruebas en Sepolia completadas
+</p>
+
+<p data-es="Deploy en Mainnet cuando haya ETH suficiente"
+   data-en="Mainnet deploy when enough ETH is available">
+Deploy en Mainnet cuando haya ETH suficiente
+</p>
+</div>
+
+<div class="card">
+<h2 data-es="¿Qué es BLV?"
+    data-en="What is BLV?">¿Qué es BLV?</h2>
+
+<p data-es="BLV es un token creado para crecer de forma orgánica con su comunidad."
+   data-en="BLV is a token created to grow organically with its community.">
+BLV es un token creado para crecer de forma orgánica con su comunidad.
+</p>
+</div>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll("[data-es]").forEach(el=>{
+    el.innerText = el.getAttribute("data-"+lang);
+  });
+}
+</script>
+<div class="card">
+<h2 data-es="Tokenomics" data-en="Tokenomics">Tokenomics</h2>
+<p data-es="Suministro total: 20,000,000 BLV"
+   data-en="Total supply: 20,000,000 BLV">
+Suministro total: 20,000,000 BLV
+</p>
+<p data-es="Red: Ethereum"
+   data-en="Network: Ethereum">
+Red: Ethereum
+</p>
+</div>
+
+<div class="card">
+<h2 data-es="Roadmap" data-en="Roadmap">Roadmap</h2>
+<p data-es="Fase 1: Deploy en Sepolia (completado)"
+   data-en="Phase 1: Sepolia deploy (completed)">
+Fase 1: Deploy en Sepolia (completado)
+</p>
+<p data-es="Fase 2: Web y comunidad"
+   data-en="Phase 2: Website and community">
+Fase 2: Web y comunidad
+</p>
+<p data-es="Fase 3: Deploy en Mainnet"
+   data-en="Phase 3: Mainnet deploy">
+Fase 3: Deploy en Mainnet
+</p>
+</div>
+
+<div class="card">
+<h2 data-es="Contrato" data-en="Contract">Contrato</h2>
+<p data-es="Dirección Mainnet: pendiente"
+   data-en="Mainnet address: pending">
+Dirección Mainnet: pendiente
+</p><p 
+data-es="Contrato (Sepolia): 0x87Eb4292319dA51297E42A1fF3921e0789F5aA52"
+data-en="Contract (Sepolia): 0x87Eb4292319dA51297E42A1fF3921e0789F5aA52">
+<a href="https://sepolia.etherscan.io/address/0x87Eb4292319dA51297E42A1fF3921e0789F5aA52" target="_blank">
+Contrato (Sepolia): 0x87Eb4292319dA51297E42A1fF3921e0789F5aA52
+</a>
+</div>
+
+</body>
+</html>
